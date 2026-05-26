@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<!--
+  Saathi — Privacy Policy
+  DRAFT prepared 2026-05-26 for DT IT Solutions Private Limited.
+  IMPORTANT: Have this reviewed by a qualified lawyer (India DPDP Act 2023)
+  before publishing — see accompanying notes. Replace bracketed placeholders.
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Saathi</title>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream:      #FFF8F0;
+    --cream-dark: #F5EDE0;
+    --saffron:    #FF8C00;
+    --maroon:     #7B1F1F;
+    --maroon-lt:  #9B2C2C;
+    --gold:       #C4952A;
+    --gold-dk:    #B85F00;
+    --ink:        #2C1810;
+    --ink-soft:   #4A3020;
+    --ink-muted:  #7A5C40;
+    --border:     #E8D5B7;
+  }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { font-size: 16px; scroll-behavior: smooth; }
+  body {
+    background: var(--cream);
+    font-family: 'Lora', Georgia, serif;
+    color: var(--ink-soft);
+    line-height: 1.75;
+  }
+  .wrap { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+
+  /* Header */
+  header {
+    background: var(--maroon);
+    color: var(--cream);
+    padding: 56px 0 44px;
+    border-bottom: 4px solid var(--gold);
+  }
+  header .eyebrow {
+    font-size: .72rem; letter-spacing: .2em; text-transform: uppercase;
+    color: var(--saffron); font-weight: 600; margin-bottom: 14px;
+  }
+  header h1 {
+    font-family: 'Playfair Display', serif; font-weight: 800;
+    font-size: 2.6rem; line-height: 1.1; color: var(--cream);
+  }
+  header .sub {
+    font-style: italic; color: rgba(255,248,240,.7);
+    margin-top: 10px; font-size: 1rem;
+  }
+  header .meta {
+    margin-top: 24px; display: flex; gap: 28px; flex-wrap: wrap;
+    font-size: .82rem; color: rgba(255,248,240,.85);
+  }
+  header .meta b { color: var(--saffron); font-weight: 600; }
+
+  main { padding: 48px 0 72px; }
+
+  .lead {
+    font-size: 1.02rem; color: var(--ink); margin-bottom: 28px;
+  }
+
+  /* TOC */
+  .toc {
+    background: var(--cream-dark); border: 1px solid var(--border);
+    border-radius: 6px; padding: 22px 26px; margin-bottom: 40px;
+  }
+  .toc h2 {
+    font-family: 'Lora', serif; font-size: .8rem; letter-spacing: .14em;
+    text-transform: uppercase; color: var(--maroon); margin-bottom: 12px;
+  }
+  .toc ol { list-style: none; counter-reset: toc; columns: 2; column-gap: 32px; }
+  .toc li { counter-increment: toc; padding: 3px 0; font-size: .9rem; break-inside: avoid; }
+  .toc li::before {
+    content: counter(toc) '. '; color: var(--saffron); font-weight: 700;
+  }
+  .toc a { color: var(--ink-soft); text-decoration: none; }
+  .toc a:hover { color: var(--maroon); }
+
+  h2.section {
+    font-family: 'Playfair Display', serif; font-weight: 700;
+    font-size: 1.5rem; color: var(--maroon); margin: 44px 0 14px;
+    padding-bottom: 8px; border-bottom: 2px solid var(--border);
+  }
+  h2.section .n { color: var(--saffron); margin-right: 10px; }
+  h3 {
+    font-family: 'Lora', serif; font-size: 1.05rem; font-weight: 700;
+    color: var(--maroon-lt); margin: 26px 0 8px;
+  }
+  p { margin-bottom: 14px; font-size: .95rem; }
+  strong { color: var(--ink); font-weight: 600; }
+  a { color: var(--gold-dk); }
+
+  ul { margin: 12px 0 18px; padding-left: 0; list-style: none; }
+  ul li {
+    position: relative; padding: 5px 0 5px 24px; font-size: .93rem;
+  }
+  ul li::before {
+    content: '◆'; position: absolute; left: 2px; top: 7px;
+    color: var(--saffron); font-size: .55rem;
+  }
+
+  table {
+    width: 100%; border-collapse: collapse; margin: 16px 0 24px;
+    font-size: .84rem;
+  }
+  thead tr { background: var(--maroon); color: var(--cream); }
+  thead th { padding: 9px 12px; text-align: left; font-weight: 600; font-size: .8rem; }
+  tbody tr { border-bottom: 1px solid var(--border); }
+  tbody tr:nth-child(even) { background: var(--cream-dark); }
+  tbody td { padding: 8px 12px; vertical-align: top; }
+  tbody td:first-child { font-weight: 600; color: var(--ink); }
+
+  .callout {
+    background: linear-gradient(135deg, #FFF3E0, #FFECC8);
+    border-left: 4px solid var(--saffron);
+    border-radius: 4px; padding: 14px 18px; margin: 18px 0;
+    font-size: .9rem;
+  }
+  .callout strong { color: var(--gold-dk); }
+
+  footer {
+    background: var(--maroon); color: rgba(255,248,240,.7);
+    padding: 28px 0; font-size: .8rem; text-align: center;
+  }
+  footer b { color: var(--saffron); }
+
+  @media (max-width: 560px) {
+    header h1 { font-size: 2rem; }
+    .toc ol { columns: 1; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">Saathi — Hindu Spiritual Practice App</div>
+    <h1>Privacy Policy</h1>
+    <div class="sub">How we collect, use, and protect your information</div>
+    <div class="meta">
+      <span><b>Effective date:</b> 26 May 2026</span>
+      <span><b>Last updated:</b> 26 May 2026</span>
+      <span><b>Publisher:</b> DT IT Solutions Private Limited</span>
+    </div>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <p class="lead">This Privacy Policy explains how <strong>DT IT Solutions Private Limited</strong> (&ldquo;DT IT Solutions&rdquo;, &ldquo;we&rdquo;, &ldquo;us&rdquo;, or &ldquo;our&rdquo;) collects, uses, shares, and protects your personal information when you use the <strong>Saathi</strong> mobile application (the &ldquo;App&rdquo;). Saathi is a Hindu spiritual practice companion that offers a scripture-grounded conversational guide together with daily practice tools. Please read this policy carefully. By creating an account and using Saathi, you acknowledge that you have read and understood this policy.</p>
+
+  <div class="toc">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#s1">Who we are</a></li>
+      <li><a href="#s2">Information we collect</a></li>
+      <li><a href="#s3">How we use your information</a></li>
+      <li><a href="#s4">How the AI guide works</a></li>
+      <li><a href="#s5">How we share information</a></li>
+      <li><a href="#s6">International data transfers</a></li>
+      <li><a href="#s7">Data retention</a></li>
+      <li><a href="#s8">Your rights and choices</a></li>
+      <li><a href="#s9">Account and data deletion</a></li>
+      <li><a href="#s10">Data security</a></li>
+      <li><a href="#s11">Children&rsquo;s privacy</a></li>
+      <li><a href="#s12">Sensitive personal data</a></li>
+      <li><a href="#s13">Permissions we request</a></li>
+      <li><a href="#s14">What we do not do</a></li>
+      <li><a href="#s15">Changes to this policy</a></li>
+      <li><a href="#s16">Grievance officer &amp; contact</a></li>
+    </ol>
+  </div>
+
+  <h2 class="section" id="s1"><span class="n">1.</span>Who we are</h2>
+  <p>Saathi is published and operated by <strong>DT IT Solutions Private Limited</strong>, a company incorporated in India under the Companies Act, 2013.</p>
+  <table>
+    <tbody>
+      <tr><td>Legal entity</td><td>DT IT Solutions Private Limited</td></tr>
+      <tr><td>Corporate Identity Number (CIN)</td><td>U62013RJ2026PTC111016</td></tr>
+      <tr><td>Registered office</td><td>903, Shivgyan Heights, Ajmer Road DCM, Shyam Nagar, Jaipur, Rajasthan 302019, India</td></tr>
+      <tr><td>Contact email</td><td><a href="mailto:info@dtitglobal.com">info@dtitglobal.com</a></td></tr>
+      <tr><td>Website</td><td><a href="https://dtitglobal.com">dtitglobal.com</a></td></tr>
+    </tbody>
+  </table>
+  <p>For the purposes of applicable data protection law, including India&rsquo;s Digital Personal Data Protection Act, 2023, DT IT Solutions Private Limited is the <strong>Data Fiduciary</strong> (controller) responsible for your personal data processed through the App.</p>
+
+  <h2 class="section" id="s2"><span class="n">2.</span>Information we collect</h2>
+  <p>We collect only the information needed to provide and improve Saathi. The categories below reflect what the App actually collects.</p>
+
+  <h3>2.1 Account information</h3>
+  <p>When you sign up, we collect your <strong>email address</strong> and a <strong>password</strong>. Authentication is handled by our infrastructure provider, Supabase; your password is stored by Supabase in hashed form and is never visible to us.</p>
+
+  <h3>2.2 Spiritual profile and onboarding information</h3>
+  <p>During onboarding and in your profile, you may provide: display name, gender, age range, country, family situation, occupation, spiritual tradition or lineage (sampradaya), spiritual level, the practices you follow, your current life situation, primary concerns, emotional state, spiritual goals, and a free-text description of those goals. This information is used to personalise the guidance the App provides. Some of it reveals religious or philosophical beliefs and is treated as sensitive — see Section 12.</p>
+
+  <h3>2.3 Conversations and content you create</h3>
+  <p>We collect the messages you send to the Saathi AI guide and the App&rsquo;s responses, including any feedback you give (for example, marking a reply as helpful). We also store practice data you generate: japa (mantra) sessions, sadhana (practice) logs, and scripture bookmarks.</p>
+
+  <h3>2.4 Voice recordings</h3>
+  <p>If you use voice input, the App records short audio clips on your device and sends them to our transcription provider to convert speech to text. The resulting text is processed like any other message. Audio is sent for the sole purpose of transcription.</p>
+
+  <h3>2.5 Birth-chart (kundali) information</h3>
+  <p>If you use the kundali or horoscope features, you may provide birth details for yourself and, optionally, family members: name, date of birth, time of birth, place of birth (including approximate coordinates), and contextual details such as marital status, number of children, career stage, and areas of concern. This data is used solely to compute the astrological chart and generate the related reports you request.</p>
+
+  <h3>2.6 Location information</h3>
+  <p>For the panchang (almanac) and &ldquo;Temples Near You&rdquo; features, the App uses your device&rsquo;s location while the App is in use, with your permission, to provide locally accurate astronomical data and to find nearby temples. Location is used at the time of the request and is not used to track you.</p>
+
+  <h3>2.7 Diagnostic and technical information</h3>
+  <p>To keep the App stable, we collect crash reports and error diagnostics through our monitoring provider. These may include technical details such as device model, operating system version, and the technical context of an error.</p>
+
+  <h3>2.8 Notification preferences</h3>
+  <p>If you enable the daily shloka reminder, we store your chosen reminder time and language preference. Daily reminders are scheduled locally on your device.</p>
+
+  <h2 class="section" id="s3"><span class="n">3.</span>How we use your information</h2>
+  <p>We use your information to:</p>
+  <ul>
+    <li>Create and manage your account and authenticate you securely.</li>
+    <li>Provide the App&rsquo;s features — the conversational guide, daily shloka, scripture library, japa counter, sadhana tracker, panchang, kundali and horoscope, and temple discovery.</li>
+    <li>Personalise guidance using your spiritual profile and the context of your past conversations.</li>
+    <li>Maintain conversation memory so the guide can refer to earlier discussions without you re-explaining your situation.</li>
+    <li>Improve the relevance of scripture retrieval based on the feedback you provide.</li>
+    <li>Monitor, diagnose, and fix technical problems and keep the App secure.</li>
+    <li>Communicate with you about your account, security, and important changes to the App or this policy.</li>
+    <li>Comply with legal obligations.</li>
+  </ul>
+  <p>Our legal basis for processing is your consent (which you may withdraw — see Section 8), the performance of our service to you, and our legitimate interest in keeping the App secure and functional, as permitted by applicable law.</p>
+
+  <h2 class="section" id="s4"><span class="n">4.</span>How the AI guide works</h2>
+  <p>Saathi&rsquo;s guide uses artificial intelligence. When you send a message, the App retrieves passages of scripture relevant to your question and sends them, along with your message, your spiritual profile, and short summaries of your earlier conversations, to a third-party AI provider that generates the response. Responses are intended for spiritual reflection and education. <strong>Saathi does not provide medical, legal, financial, or psychological advice, and its responses are not a substitute for professional help.</strong> AI-generated content may occasionally be inaccurate; please use your own judgement.</p>
+
+  <h2 class="section" id="s5"><span class="n">5.</span>How we share information</h2>
+  <p>We do <strong>not</strong> sell your personal data. We share information only with the service providers (sub-processors) that make the App work, and only to the extent needed to provide their service. Each provider processes data under its own terms and security obligations.</p>
+  <table>
+    <thead><tr><th>Provider</th><th>Purpose</th><th>Data involved</th></tr></thead>
+    <tbody>
+      <tr><td>Supabase</td><td>Database, authentication, and hosting</td><td>Account, profile, conversations, practice and kundali data</td></tr>
+      <tr><td>Anthropic</td><td>AI processing of conversations and related text generation</td><td>Your messages, spiritual profile, conversation summaries, retrieved scripture</td></tr>
+      <tr><td>Cohere</td><td>Converting text into numerical form for relevant-scripture search</td><td>Your messages and conversation summaries</td></tr>
+      <tr><td>Groq</td><td>Speech-to-text transcription of voice input</td><td>Voice recordings you submit</td></tr>
+      <tr><td>Google (Places API)</td><td>Finding temples near you</td><td>Approximate location and search radius</td></tr>
+      <tr><td>Sentry</td><td>Crash and error monitoring</td><td>Diagnostic and technical data</td></tr>
+      <tr><td>Expo (EAS)</td><td>App build and delivery infrastructure</td><td>Technical app data</td></tr>
+      <tr><td>Cloud hosting provider</td><td>Hosting the Saathi server</td><td>Data in transit between the App and our server</td></tr>
+    </tbody>
+  </table>
+  <p>We may also disclose information if required by law, to comply with legal process, to enforce our terms, or to protect the rights, safety, and security of our users, the public, or DT IT Solutions. If we are ever involved in a merger, acquisition, or sale of assets, personal data may be transferred as part of that transaction; we will notify you of any such change.</p>
+
+  <h2 class="section" id="s6"><span class="n">6.</span>International data transfers</h2>
+  <p>Some of our service providers process data on servers located outside India, including in the United States. Where your personal data is transferred internationally, we take steps to ensure it remains protected in line with this policy and applicable law. By using the App, you understand that your information may be processed in countries other than the one in which you reside.</p>
+
+  <h2 class="section" id="s7"><span class="n">7.</span>Data retention</h2>
+  <p>We retain your personal data for as long as your account is active and for as long as needed to provide the App. Specifically:</p>
+  <ul>
+    <li>Account, profile, conversation, practice, and kundali data are retained until you delete the relevant item or your account.</li>
+    <li>Voice recordings are used transiently for transcription and are not retained as audio after the transcription is produced.</li>
+    <li>Diagnostic data is retained for a limited period for debugging and security purposes.</li>
+  </ul>
+  <p>When you delete your account, we delete or irreversibly anonymise your personal data within a reasonable period, except where we are required to retain certain information to comply with legal obligations.</p>
+
+  <h2 class="section" id="s8"><span class="n">8.</span>Your rights and choices</h2>
+  <p>Subject to applicable law, including India&rsquo;s Digital Personal Data Protection Act, 2023, you have the right to:</p>
+  <ul>
+    <li><strong>Access</strong> the personal data we hold about you and obtain a summary of how it is processed.</li>
+    <li><strong>Correct, complete, or update</strong> inaccurate or incomplete data — much of this you can do directly in the App&rsquo;s profile screens.</li>
+    <li><strong>Delete</strong> your personal data and your account (see Section 9).</li>
+    <li><strong>Withdraw consent</strong> at any time, after which we will stop the related processing; this does not affect processing already carried out.</li>
+    <li><strong>Nominate</strong> another individual to exercise your rights in the event of your death or incapacity.</li>
+    <li><strong>Grieve</strong> — raise a complaint with our Grievance Officer (see Section 16), and escalate to the Data Protection Board of India if unresolved.</li>
+  </ul>
+  <p>To exercise any of these rights, contact us at <a href="mailto:info@dtitglobal.com">info@dtitglobal.com</a>. We may need to verify your identity before acting on a request.</p>
+
+  <h2 class="section" id="s9"><span class="n">9.</span>Account and data deletion</h2>
+  <p>You can delete individual conversations, practice logs, and kundali profiles directly within the App. You may also request deletion of your entire account and all associated personal data.</p>
+  <div class="callout">
+    <strong>How to delete your account:</strong> use the in-App account-deletion option in your profile settings, or email <a href="mailto:info@dtitglobal.com">info@dtitglobal.com</a> from your registered email address with the subject &ldquo;Delete my account&rdquo;. We will action verified requests within a reasonable period.
+  </div>
+
+  <h2 class="section" id="s10"><span class="n">10.</span>Data security</h2>
+  <p>We take reasonable technical and organisational measures to protect your personal data, including:</p>
+  <ul>
+    <li>Encryption of data in transit between the App, our server, and our providers.</li>
+    <li>Database-level access controls that restrict each user&rsquo;s data to that user.</li>
+    <li>Storage of authentication tokens in your device&rsquo;s hardware-backed secure storage (iOS Keychain / Android Keystore).</li>
+    <li>Server-side handling of all sensitive credentials; no provider secret keys are stored in the App itself.</li>
+    <li>Access limited to authorised personnel on a need-to-know basis.</li>
+  </ul>
+  <p>No method of transmission or storage is completely secure. While we work hard to protect your data, we cannot guarantee absolute security.</p>
+
+  <h2 class="section" id="s11"><span class="n">11.</span>Children&rsquo;s privacy</h2>
+  <p>Saathi is intended for users <strong>18 years of age and older</strong>. We do not knowingly collect personal data from children. If you are below 18, please do not use the App or provide any personal information. If we become aware that we have collected personal data from a child without the consent required by law, we will take steps to delete it. A parent or legal guardian who believes their child has provided us personal data may contact us at <a href="mailto:info@dtitglobal.com">info@dtitglobal.com</a>.</p>
+
+  <h2 class="section" id="s12"><span class="n">12.</span>Sensitive personal data</h2>
+  <p>To provide spiritually relevant guidance, Saathi necessarily processes information that may reveal your <strong>religious and philosophical beliefs and practices</strong>, and — through the kundali features — your birth details. We treat this information as sensitive. We process it only to provide the features you choose to use, only with your consent, and we do not use it for advertising or sell it to anyone. You may choose not to provide this information, though some features may then be unavailable.</p>
+
+  <h2 class="section" id="s13"><span class="n">13.</span>Permissions we request</h2>
+  <table>
+    <thead><tr><th>Permission</th><th>Why we ask</th></tr></thead>
+    <tbody>
+      <tr><td>Microphone</td><td>To let you speak your questions to the guide using voice input</td></tr>
+      <tr><td>Location (while in use)</td><td>To provide accurate panchang data and find temples near you</td></tr>
+      <tr><td>Notifications</td><td>To send your optional daily shloka reminder</td></tr>
+    </tbody>
+  </table>
+  <p>Each permission is requested only when the related feature is first used, and you can change or revoke these permissions at any time in your device settings.</p>
+
+  <h2 class="section" id="s14"><span class="n">14.</span>What we do not do</h2>
+  <ul>
+    <li>We do not sell or rent your personal data.</li>
+    <li>We do not collect payment-card or bank-account information.</li>
+    <li>We do not use your data to serve third-party advertising, and we do not track you across other apps or websites for advertising.</li>
+    <li>We do not knowingly collect data from children under 18.</li>
+  </ul>
+
+  <h2 class="section" id="s15"><span class="n">15.</span>Changes to this policy</h2>
+  <p>We may update this Privacy Policy from time to time to reflect changes in the App, our practices, or the law. When we make material changes, we will update the &ldquo;Last updated&rdquo; date above and, where appropriate, notify you within the App. Your continued use of Saathi after an update means you accept the revised policy.</p>
+
+  <h2 class="section" id="s16"><span class="n">16.</span>Grievance officer &amp; contact</h2>
+  <p>If you have questions, concerns, or complaints about this policy or how your personal data is handled, please contact us:</p>
+  <table>
+    <tbody>
+      <tr><td>Grievance Officer</td><td>DT IT Solutions Private Limited</td></tr>
+      <tr><td>Email</td><td><a href="mailto:info@dtitglobal.com">info@dtitglobal.com</a></td></tr>
+      <tr><td>Postal address</td><td>903, Shivgyan Heights, Ajmer Road DCM, Shyam Nagar, Jaipur, Rajasthan 302019, India</td></tr>
+    </tbody>
+  </table>
+  <p>We will acknowledge and address grievances within the timelines required by applicable law. If you are not satisfied with our response, you may have the right to escalate your complaint to the Data Protection Board of India.</p>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    &copy; 2026 <b>DT IT Solutions Private Limited</b>. All rights reserved.<br>
+    Saathi — Privacy Policy &middot; Last updated 26 May 2026
+  </div>
+</footer>
+
+</body>
+</html>
